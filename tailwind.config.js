@@ -4,7 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        darkGray: '#111111',
+        darkGray: '#191919',
+        darkerGray: '#111111',
+        lightGray: '#555555',
+        lighterGray: '#AEAEAE',
+        lightestGray: '#E5E5E5',
+        softWhite: '#F4F4F4',
+        offWhite: '#FFFEFA',
       },
       fontFamily: {
         aeonik: ['Aeonik', 'sans-serif'],
