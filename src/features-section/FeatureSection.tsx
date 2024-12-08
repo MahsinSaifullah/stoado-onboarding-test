@@ -1,10 +1,11 @@
 import { Tabs } from '../components';
+import { FeaturePanel } from './FeaturePanel';
 
 export const FeatureSection = () => {
   return (
     <section
       className="bg-[url('https://cdn.auth0.com/website/cic-homepage/bg-mobile/BG_Mobile.svg')]
-    bg-top bg-no-repeat bg-cover rounded-[2.4rem] min-h-fit text-white p-16"
+    bg-top bg-no-repeat bg-cover rounded-[2.4rem] min-h-fit text-white pl-16 py-16"
     >
       <h2 className="text-6xl max-w-[50%] mb-6">
         Identity is so much more than just the login box
@@ -24,7 +25,7 @@ export const FeatureSection = () => {
         activeIndex={0}
         onTabSelect={() => {}}
       >
-        <div></div>
+        <FeaturePanel />
       </Tabs>
     </section>
   );

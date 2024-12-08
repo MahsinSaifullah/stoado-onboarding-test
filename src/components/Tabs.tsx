@@ -17,7 +17,7 @@ export const Tabs = ({
         {tabs.map((tab, index) => (
           <button
             className={cn(
-              'w-fit border border-lightGray rounded-[3rem] px-8 py-4 text-lighterGray hover:border-softWhite hover:text-lightestGray',
+              'min-w-fit border border-lightGray rounded-[3rem] px-8 py-4 text-lighterGray hover:border-softWhite hover:text-lightestGray',
               {
                 'bg-offWhite text-darkGray hover:bg-transparent border-softWhite':
                   index === activeIndex,
@@ -29,7 +29,7 @@ export const Tabs = ({
           </button>
         ))}
       </div>
-      <div>{children}</div>
+      <div className="mt-14">{children}</div>
     </div>
   );
 };
