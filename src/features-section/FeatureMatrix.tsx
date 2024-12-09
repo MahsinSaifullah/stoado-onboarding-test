@@ -1,7 +1,7 @@
 export const FeatureMatrix = () => {
   return (
     <div className="flex space-x-2 mt-12 overflow-x-scroll">
-      <div className="min-w-[250px]">
+      <div className="min-w-[250px] flex-1">
         <p
           className="uppercase flex items-center tracking-[0.15rem] text-sm
         text-peach font-light mb-10"
@@ -24,9 +24,15 @@ export const FeatureMatrix = () => {
           <p className="py-4 px-6 bg-charcoal min-w-fit rounded-[3rem] whitespace-nowrap">
             Enterprise Federation
           </p>
+          <p className="py-4 px-6 bg-charcoal min-w-fit rounded-[3rem] whitespace-nowrap">
+            Enterprise Federation
+          </p>
+          <p className="py-4 px-6 bg-charcoal min-w-fit rounded-[3rem] whitespace-nowrap">
+            Enterprise Federation
+          </p>
         </div>
       </div>
-      <div className="min-w-[250px]">
+      <div className="min-w-[250px] flex-1">
         <p className="uppercase flex items-center tracking-[0.15rem] text-sm text-lavendar font-light mb-10">
           <img
             src="https://cdn.auth0.com/website/cic-homepage/industriesFlow/login.svg"
@@ -48,7 +54,7 @@ export const FeatureMatrix = () => {
           </p>
         </div>
       </div>
-      <div className="min-w-[250px]">
+      <div className="min-w-[250px] flex-1">
         <p className="uppercase flex items-center tracking-[0.15rem] text-sm text-pastelBlue font-light mb-10">
           <img
             src="https://cdn.auth0.com/website/cic-homepage/industriesFlow/check-circle.svg"
@@ -70,7 +76,7 @@ export const FeatureMatrix = () => {
           </p>
         </div>
       </div>
-      <div className="min-w-[250px]">
+      <div className="min-w-[250px] flex-1">
         <p className="uppercase flex items-center tracking-[0.15rem] text-sm font-light text-teal mb-10">
           <img
             src="https://cdn.auth0.com/website/cic-homepage/industriesFlow/hexagon.svg"
