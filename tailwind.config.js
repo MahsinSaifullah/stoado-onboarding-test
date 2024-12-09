@@ -9,6 +9,8 @@ export default {
         lightGray: '#555555',
         lighterGray: '#AEAEAE',
         lightestGray: '#E5E5E5',
+        paleTaupe: '#AFABA1',
+        charcoalGray: '#4B4B4B',
         charcoal: '#272727',
         softWhite: '#F4F4F4',
         offWhite: '#FFFEFA',
