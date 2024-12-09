@@ -11,6 +11,10 @@ export default {
         lightestGray: '#E5E5E5',
         softWhite: '#F4F4F4',
         offWhite: '#FFFEFA',
+        peach: '#F2AC84',
+        lavendar: '#B49BFC',
+        pastelBlue: '#B6CAFF',
+        teal: '#4CB7A3',
       },
       fontFamily: {
         aeonik: ['Aeonik', 'sans-serif'],

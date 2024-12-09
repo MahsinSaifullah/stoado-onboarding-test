@@ -1,3 +1,5 @@
+import { FeatureMatrix } from './FeatureMatrix';
+
 export const FeaturePanel = () => {
   return (
     <div>
@@ -6,6 +8,7 @@ export const FeaturePanel = () => {
         services. Incorporate an organizational portal, access controls, and
         multiple extensions.
       </p>
+      <FeatureMatrix />
     </div>
   );
 };
