@@ -6,7 +6,7 @@ type ClientProps = {
 
 export const Client: React.FC<ClientProps> = ({ clientExample }) => {
   return (
-    <div className="max-w-[50%]">
+    <div className="max-w-[50%] pl-16">
       <img src={clientExample.logo} alt={clientExample.name} className="mb-3" />
       <a
         className="text-xl tracking-wider after:content-['→'] after:pl-2 hover:underline"

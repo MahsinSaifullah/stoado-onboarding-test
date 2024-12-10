@@ -7,8 +7,9 @@ type MatrixProps = {
 
 export const Matrix: React.FC<MatrixProps> = ({ matrix }) => {
   return (
-    <div className="flex mt-12 overflow-x-scroll">
-      <div className="min-w-[250px] flex-1">
+    <div className="flex mt-12 overflow-x-scroll relative">
+      <div className="h-[0.2rem] bg-peach w-[250px] absolute top-[46px]" />
+      <div className="min-w-[314px] flex-1 pl-16">
         <div
           style={{
             background:

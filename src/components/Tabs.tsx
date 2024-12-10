@@ -4,12 +4,14 @@ import { cn } from '../utils';
 type TabsProps = {
   tabs: string[];
   onTabSelect: (index: number) => void;
+  buttonContainerStyle?: string;
 };
 
 export const Tabs = ({
   children,
   tabs,
   onTabSelect,
+  buttonContainerStyle,
 }: React.PropsWithChildren<TabsProps>) => {
   const [activeIndex, setActiveIndex] = React.useState(0);
 
@@ -20,7 +22,9 @@ export const Tabs = ({
 
   return (
     <div className="flex flex-col">
-      <div className="flex overflow-x-scroll space-x-2">
+      <div
+        className={cn('flex overflow-x-scroll space-x-2', buttonContainerStyle)}
+      >
         {tabs.map((tab, index) => (
           <button
             className={cn(
