@@ -1,7 +1,19 @@
+import React from 'react';
 import { Tabs } from '../components';
+import { FEATURES, Feature, FeatureCategory } from '../lib';
 import { FeaturePanel } from './FeaturePanel';
 
+const TABS = Object.values(FeatureCategory);
+
 export const FeatureSection = () => {
+  const [selectedPanel, setSelectedPanel] = React.useState<Feature>(
+    FEATURES[TABS[0]]
+  );
+
+  const handleOnTabSelect = (index: number) => {
+    setSelectedPanel(FEATURES[TABS[index]]);
+  };
+
   return (
     <section
       className="bg-[url('https://cdn.auth0.com/website/cic-homepage/bg-mobile/BG_Mobile.svg')]
@@ -13,19 +25,8 @@ export const FeatureSection = () => {
       <p className="text-3xl font-light mb-14">
         Let’s take a look at everything you can do.
       </p>
-      <Tabs
-        tabs={[
-          'B2B SaaS',
-          'Retail',
-          'Financial Services',
-          'Publishing',
-          'Travel',
-          'Healthcare',
-        ]}
-        activeIndex={0}
-        onTabSelect={() => {}}
-      >
-        <FeaturePanel />
+      <Tabs tabs={TABS} onTabSelect={handleOnTabSelect}>
+        <FeaturePanel feature={selectedPanel} />
       </Tabs>
     </section>
   );
