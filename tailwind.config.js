@@ -17,6 +17,7 @@ export default {
         peach: '#F2AC84',
         lavendar: '#B49BFC',
         pastelBlue: '#B6CAFF',
+        softBlue: '#99A7F1',
         teal: '#4CB7A3',
       },
       backgroundImage: {

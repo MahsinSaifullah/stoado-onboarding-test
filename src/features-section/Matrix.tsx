@@ -9,7 +9,7 @@ export const Matrix: React.FC<MatrixProps> = ({ matrix }) => {
   return (
     <div className="flex space-x-2 mt-12 overflow-x-scroll">
       <div className="min-w-[250px] flex-1">
-        <p
+        <div
           className="uppercase flex items-center tracking-[0.15rem] text-sm
         text-peach font-light mb-10"
         >
@@ -20,7 +20,7 @@ export const Matrix: React.FC<MatrixProps> = ({ matrix }) => {
             className="mr-3"
           />
           Registration
-        </p>
+        </div>
         <MatrixItemList matrixItems={matrix.registration} />
       </div>
       <div className="min-w-[250px] flex-1">
