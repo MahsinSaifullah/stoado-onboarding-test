@@ -1,4 +1,11 @@
-export const Matrix = () => {
+import { MatrixType } from '../lib';
+import { MatrixItemList } from './MatrixItemList';
+
+type MatrixProps = {
+  matrix: MatrixType;
+};
+
+export const Matrix: React.FC<MatrixProps> = ({ matrix }) => {
   return (
     <div className="flex space-x-2 mt-12 overflow-x-scroll">
       <div className="min-w-[250px] flex-1">
@@ -14,23 +21,7 @@ export const Matrix = () => {
           />
           Registration
         </p>
-        <div className="flex flex-wrap gap-2  text-lighterGray font-light text-xs">
-          <p className="bg-charcoal py-4 px-6 min-w-fit rounded-[3rem] whitespace-nowrap">
-            Bot Detection
-          </p>
-          <p className="py-4 px-6 bg-charcoal min-w-fit rounded-[3rem] whitespace-nowrap">
-            Provisioning
-          </p>
-          <p className="py-4 px-6 bg-charcoal min-w-fit rounded-[3rem] whitespace-nowrap">
-            Enterprise Federation
-          </p>
-          <p className="py-4 px-6 bg-charcoal min-w-fit rounded-[3rem] whitespace-nowrap">
-            Enterprise Federation
-          </p>
-          <p className="py-4 px-6 bg-charcoal min-w-fit rounded-[3rem] whitespace-nowrap">
-            Enterprise Federation
-          </p>
-        </div>
+        <MatrixItemList matrixItems={matrix.registration} />
       </div>
       <div className="min-w-[250px] flex-1">
         <p className="uppercase flex items-center tracking-[0.15rem] text-sm text-lavendar font-light mb-10">
@@ -42,17 +33,7 @@ export const Matrix = () => {
           />
           Login
         </p>
-        <div className="flex flex-wrap gap-2  text-lighterGray font-light text-xs">
-          <p className="bg-charcoal py-4 px-6 min-w-fit rounded-[3rem] whitespace-nowrap">
-            Bot Detection
-          </p>
-          <p className="py-4 px-6 bg-charcoal min-w-fit rounded-[3rem] whitespace-nowrap">
-            Provisioning
-          </p>
-          <p className="py-4 px-6 bg-charcoal min-w-fit rounded-[3rem] whitespace-nowrap">
-            Enterprise Federation
-          </p>
-        </div>
+        <MatrixItemList matrixItems={matrix.login} />
       </div>
       <div className="min-w-[250px] flex-1">
         <p className="uppercase flex items-center tracking-[0.15rem] text-sm text-pastelBlue font-light mb-10">
@@ -64,17 +45,7 @@ export const Matrix = () => {
           />
           Access
         </p>
-        <div className="flex flex-wrap gap-2  text-lighterGray font-light text-xs">
-          <p className="bg-charcoal py-4 px-6 min-w-fit rounded-[3rem] whitespace-nowrap">
-            Bot Detection
-          </p>
-          <p className="py-4 px-6 bg-charcoal min-w-fit rounded-[3rem] whitespace-nowrap">
-            Provisioning
-          </p>
-          <p className="py-4 px-6 bg-charcoal min-w-fit rounded-[3rem] whitespace-nowrap">
-            Enterprise Federation
-          </p>
-        </div>
+        <MatrixItemList matrixItems={matrix.access} />
       </div>
       <div className="min-w-[250px] flex-1">
         <p className="uppercase flex items-center tracking-[0.15rem] text-sm font-light text-teal mb-10">
@@ -86,17 +57,7 @@ export const Matrix = () => {
           />
           Transactions
         </p>
-        <div className="flex flex-wrap gap-2  text-lighterGray font-light text-xs">
-          <p className="bg-charcoal py-4 px-6 min-w-fit rounded-[3rem] whitespace-nowrap">
-            Bot Detection
-          </p>
-          <p className="py-4 px-6 bg-charcoal min-w-fit rounded-[3rem] whitespace-nowrap">
-            Provisioning
-          </p>
-          <p className="py-4 px-6 bg-charcoal min-w-fit rounded-[3rem] whitespace-nowrap">
-            Enterprise Federation
-          </p>
-        </div>
+        <MatrixItemList matrixItems={matrix.transaction} />
       </div>
     </div>
   );
