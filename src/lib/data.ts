@@ -241,7 +241,7 @@ export const FEATURES: FeatureData = {
     },
     clientExample: {
       name: "O'Reilly",
-      logo: 'https://cdn.auth0.com/website/cic-homepage/industries-flow//finder.svg',
+      logo: 'https://cdn.auth0.com/website/cic-homepage/industries-flow//oreilly.svg',
       prompt:
         'Learn how O’Reilly Online Learning built a flexible SSO platform for enterprise customer integrations',
       link: 'https://auth0.com/customers',
