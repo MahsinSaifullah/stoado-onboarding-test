@@ -28,7 +28,7 @@ export const FeatureSection = () => {
         </p>
       </div>
       <Tabs
-        buttonContainerStyle="pl-16"
+        buttonContainerStyle="pl-10 lg:pl-16"
         tabs={TABS}
         onTabSelect={handleOnTabSelect}
       >
