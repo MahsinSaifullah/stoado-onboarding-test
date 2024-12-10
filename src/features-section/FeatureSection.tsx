@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tabs } from '../components';
 import { FEATURES, Feature, FeatureCategory } from '../lib';
-import { FeaturePanel } from './FeaturePanel';
+import { Panel } from './Panel';
 
 const TABS = Object.values(FeatureCategory);
 
@@ -26,7 +26,7 @@ export const FeatureSection = () => {
         Let’s take a look at everything you can do.
       </p>
       <Tabs tabs={TABS} onTabSelect={handleOnTabSelect}>
-        <FeaturePanel feature={selectedPanel} />
+        <Panel feature={selectedPanel} />
       </Tabs>
     </section>
   );

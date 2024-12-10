@@ -1,12 +1,12 @@
-import { Score, ScoreCategory } from '../lib';
+import { ScoreType, ScoreCategory } from '../lib';
 
-type FeatureScoreProps = {
-  score: Score;
+type ScoreProps = {
+  score: ScoreType;
 };
 
 const SCORE_CATEGORIES = Object.values(ScoreCategory);
 
-export const FeatureScore: React.FC<FeatureScoreProps> = ({ score }) => {
+export const Score: React.FC<ScoreProps> = ({ score }) => {
   return (
     <div className="flex flex-col space-y-3">
       {SCORE_CATEGORIES.map((category) => {

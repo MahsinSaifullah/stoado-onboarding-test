@@ -1,4 +1,4 @@
-export const FeatureMatrix = () => {
+export const Matrix = () => {
   return (
     <div className="flex space-x-2 mt-12 overflow-x-scroll">
       <div className="min-w-[250px] flex-1">
