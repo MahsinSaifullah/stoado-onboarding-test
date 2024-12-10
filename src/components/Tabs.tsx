@@ -41,7 +41,7 @@ export const Tabs = ({
           </button>
         ))}
       </div>
-      <div className="mt-14">{children}</div>
+      <div className="mt-10 lg:mt-14">{children}</div>
     </div>
   );
 };

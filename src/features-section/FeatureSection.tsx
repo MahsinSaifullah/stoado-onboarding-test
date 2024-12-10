@@ -23,7 +23,7 @@ export const FeatureSection = () => {
         <h2 className="md:text-4xl lg:text-6xl max-w-[50%] mb-3 lg:mb-6">
           Identity is so much more than just the login box
         </h2>
-        <p className="md:text-xl lg:text-3xl font-light mb-14">
+        <p className="md:text-xl lg:text-3xl font-light mb-10 lg:mb-14">
           Let’s take a look at everything you can do.
         </p>
       </div>
