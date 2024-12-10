@@ -14,7 +14,7 @@ export const FeaturePanel: React.FC<FeaturePanelProps> = ({ feature }) => {
       <FeatureMatrix />
       <div className="mt-14 flex items-center justify-between pr-16">
         <Client clientExample={feature.clientExample} />
-        <FeatureScore />
+        <FeatureScore score={feature.score} />
       </div>
     </div>
   );

@@ -32,10 +32,13 @@ export type ClientExample = {
   link: string;
 };
 
+export type Score = Record<ScoreCategory, number>;
+export type Matrix = Record<MatrixCategories, MatrixItem[]>;
+
 export type Feature = {
   summary: string;
-  matrix: Record<MatrixCategories, MatrixItem[]>;
-  score: Record<ScoreCategory, number>;
+  matrix: Matrix;
+  score: Score;
   clientExample: ClientExample;
 };
 
