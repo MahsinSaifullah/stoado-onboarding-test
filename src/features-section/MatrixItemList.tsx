@@ -10,10 +10,11 @@ export const MatrixItemList: React.FC<MatrixItemProps> = ({ matrixItems }) => {
       {matrixItems.map((item, index) =>
         item.link ? (
           <div
+            key={index}
             className="flex justify-center items-center space-x-1 bg-charcoal py-4 px-6 min-w-fit rounded-[3rem]
           whitespace-nowrap  text-softBlue cursor-pointer hover:text-pastelBlue"
           >
-            <a href={item.link} key={index} className="underline">
+            <a href={item.link} className="underline">
               {item.title}
             </a>
             <span className="font-bold">→</span>
