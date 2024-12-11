@@ -23,7 +23,10 @@ export const Tabs = ({
   return (
     <div className="flex flex-col">
       <div
-        className={cn('flex overflow-x-scroll space-x-2', buttonContainerStyle)}
+        className={cn(
+          'flex overflow-x-scroll no-scrollbar space-x-2',
+          buttonContainerStyle
+        )}
       >
         {tabs.map((tab, index) => (
           <button

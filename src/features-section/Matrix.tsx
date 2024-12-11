@@ -7,7 +7,7 @@ type MatrixProps = {
 
 export const Matrix: React.FC<MatrixProps> = ({ matrix }) => {
   return (
-    <div className="flex mt-10 md:mt-12 overflow-x-scroll relative border-[0.05rem] md:border-none border-charcoalGray mx-5 md:mx-0 py-5 md:py-0 rounded-[1.6rem] min-h-72">
+    <div className="flex mt-10 md:mt-12 overflow-x-scroll no-scrollbar relative border-[0.05rem] md:border-none border-charcoalGray mx-5 md:mx-0 py-5 md:py-0 rounded-[1.6rem] min-h-72">
       <div
         aria-hidden
         className="h-[0.2rem] bg-peach w-[250px] absolute top-[46px] md:top-[37px] hidden md:inline-block"
